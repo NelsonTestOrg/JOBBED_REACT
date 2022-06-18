@@ -1,6 +1,6 @@
 // import './input.css
 import NavBar from "./components/navbar";
-import Landing from "./pages/landing";
+import Landing from "./Landing/landing";
 import 'bootstrap/dist/css/bootstrap.css';
 import React from "react";
 

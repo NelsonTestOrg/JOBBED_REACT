@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Button } from "@mui/material";
 import CommonButton from "./commonButton";
 import { AiOutlineUserAdd } from "react-icons/ai"
-import { BiUserCircle } from "react-icons/bi"
+import { TiHomeOutline } from "react-icons/ti"
 
 import {
     HomeRounded,
@@ -28,7 +27,8 @@ function NavBar() {
         background: "#E2E2E2",
         position: 'fixed',
         display: "flex",
-        flexWrap: "nowrap"
+        flexWrap: "nowrap",
+        zIndex: "99"
     }
     const mobileView = {
         fontFamily: ["Barlow Condensed", "sans-serif"].join(","),
@@ -77,20 +77,23 @@ function NavBar() {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav w-100 justify-content-start">
                                 <li className="nav-item active p-2 m-1">
-                                    <CommonButton variant="primary" color="primary" sx={myStyle}>
-                                        Home
-                                    </CommonButton>
+                                    <button class="btn btn-outline-dark top-btns">
+                                        <i class="fa-solid fa-house mx-1"></i>
+                                        Services
+                                    </button>
                                 </li>
 
                                 <li className="nav-item p-2 m-1">
-                                    <CommonButton variant="primary" color="primary" sx={myStyle}>
+                                    <button class="btn btn-outline-dark top-btns">
+                                        <i class="fa-solid fa-circle-info mx-1"></i>
                                         About us
-                                    </CommonButton>
+                                    </button>
                                 </li>
                                 <li className="nav-item p-2 m-1">
-                                    <CommonButton variant="primary" color="primary" sx={myStyle}>
-                                        Contact US
-                                    </CommonButton>
+                                    <button class="btn btn-outline-dark top-btns">
+                                        <i class="fa-solid fa-headset mx-1"></i>
+                                        Contact Us
+                                    </button>
                                 </li>
                             </ul>
                         </div>
@@ -102,16 +105,9 @@ function NavBar() {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav w-100 justify-content-end">
                                 <li className="nav-item active p-2">
-                                    <CommonButton variant="text" color="primary" sx={specialBtns}>
+                                    <CommonButton variant="contained" color="primary" sx={specialBtns}>
                                         <AccountCircleRounded />
                                         Sign In
-                                    </CommonButton>
-                                </li>
-
-                                <li className="nav-item p-2">
-                                    <CommonButton color="primary" variant="contained" sx={specialBtns}>
-                                        <AssignmentIndOutlined />
-                                        Sign Up
                                     </CommonButton>
                                 </li>
                             </ul>
@@ -124,12 +120,12 @@ function NavBar() {
                             aria-expanded="false"
                             aria-label="Toggle navigation"
                         >
-                            <Button variant="contained" color="primary" onClick={() => setShow(!show)}>
+                            <CommonButton variant="contained" color="primary" onClick={() => setShow(!show)}>
                                 {
                                     show ? <CloseRounded /> : <MenuSharp />
                                 }
 
-                            </Button>
+                            </CommonButton>
                         </span>
                     </div>
                     <div className="mobileNavbar">
