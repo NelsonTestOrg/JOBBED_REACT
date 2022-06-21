@@ -4,7 +4,10 @@ import Landing from "./Landing/landing";
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState, useEffect } from "react";
 import { db } from "./firebase-config";
-import { collection, getDocs } from "firebase/firestore"
+import { collection, getDocs } from "firebase/firestore";
+import { Route, Routes } from "react-router-dom";
+import Services from "./Sevices/services";
+
 
 
 function App() {
@@ -21,11 +24,13 @@ function App() {
   }, []);
 
   return (
-    <React.StrictMode>
+    <>
       <NavBar />
-      <Landing />
-    </React.StrictMode>
-
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </>
   );
 }
 

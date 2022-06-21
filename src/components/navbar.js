@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CommonButton from "./commonButton";
+import { Link } from "react-router-dom";
 import { AiOutlineUserAdd } from "react-icons/ai"
 import { TiHomeOutline } from "react-icons/ti"
 
@@ -79,14 +80,14 @@ function NavBar() {
                                 <li className="nav-item active p-2 m-1">
                                     <button class="btn btn-outline-dark top-btns">
                                         <i class="fa-solid fa-house mx-1"></i>
-                                        Services
+                                        <Link to="/services">Services</Link>
                                     </button>
                                 </li>
 
                                 <li className="nav-item p-2 m-1">
                                     <button class="btn btn-outline-dark top-btns">
                                         <i class="fa-solid fa-circle-info mx-1"></i>
-                                        About us
+                                        <Link to="/">Home</Link>
                                     </button>
                                 </li>
                                 <li className="nav-item p-2 m-1">

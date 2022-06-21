@@ -9,9 +9,10 @@ h1 {
   text-align: center;
   font-family: "Antic Slab", serif;
   font-size: 5vw;
-  padding-inline: 20rem;
   padding-top: 5rem;
+  margin-inline: 5rem;
   letter-spacing: 5px;
+  padding-bottom: 5rem;
 }
 
 h4 {
