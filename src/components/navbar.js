@@ -22,6 +22,9 @@ function NavBar() {
     const specialBtns = {
         fontFamily: ["Nunito", "sans-serif"].join(","),
     }
+    const rem = {
+        textDecoration: "none"
+    }
 
     const navPosition = {
         top: '0',
@@ -67,32 +70,39 @@ function NavBar() {
         >
             <div className="row nav p-0 body-head" style={{ justifyContent: "space-between", width: "100%", display: "flex", flexWrap: "nowrap" }}>
                 <div className=" p-0 logo-box" style={{ marginLeft: "5px", justifyContent: "space-between", width: "fit-content" }}>
-                    <img
-                        style={{ width: "15rem", height: "6rem", objectFit: "cover" }}
-                        src="/GigRfilled.png"
-                        alt="GIGR Logo"
-                    />
+                    <Link to="/" style={rem}>
+                        <img
+                            style={{ width: "15rem", height: "6rem", objectFit: "cover" }}
+                            src="/GigRfilled.png"
+                            alt="GIGR Logo"
+                        />
+                    </Link>
+
                 </div>
                 <div className="col-4 justify-content-center" style={{ width: "fit-content" }}>
                     <div className="navbar navbar-expand-md w-100 ml-0 h-100 justify-content-end nav-options">
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav w-100 justify-content-start">
                                 <li className="nav-item active p-2 m-1">
-                                    <button class="btn btn-outline-dark top-btns">
-                                        <i class="fa-solid fa-house mx-1"></i>
-                                        <Link to="/services">Services</Link>
+                                    <Link to="/services" style={rem}><button className="btn btn-outline-dark top-btns">
+                                        <i className="fa-solid fa-house mx-1"></i>
+                                        Services
                                     </button>
+                                    </Link>
                                 </li>
 
                                 <li className="nav-item p-2 m-1">
-                                    <button class="btn btn-outline-dark top-btns">
-                                        <i class="fa-solid fa-circle-info mx-1"></i>
-                                        <Link to="/">Home</Link>
-                                    </button>
+                                    <Link to="/" style={rem}>
+                                        <button className="btn btn-outline-dark top-btns">
+                                            <i className="fa-solid fa-circle-info mx-1"></i>
+                                            Home
+                                        </button>
+                                    </Link>
+
                                 </li>
                                 <li className="nav-item p-2 m-1">
-                                    <button class="btn btn-outline-dark top-btns">
-                                        <i class="fa-solid fa-headset mx-1"></i>
+                                    <button className="btn btn-outline-dark top-btns">
+                                        <i className="fa-solid fa-headset mx-1"></i>
                                         Contact Us
                                     </button>
                                 </li>

@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import "./landing.css";
 import backgrImage from "../assets/images/bg3.jpg";
 import CommonButton from "../components/commonButton";
+import { Link } from 'react-router-dom';
 
 function FirstSection() {
-
+    const rem = {
+        textDecoration: "none"
+    }
     const divStyle = {
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8)), url(${backgrImage})`,
         marginTop: "6rem",
@@ -40,9 +43,12 @@ function FirstSection() {
                     <option value="2" >Two</option>
                     <option value="3" >Three</option>
                 </select>
-                <CommonButton variant="contained" color="primary" sx={specialBtns}>
-                    Let's get connected
-                </CommonButton>
+                <Link to="/services" style={rem}>
+                    <CommonButton variant="contained" color="primary" sx={specialBtns}>
+                        Let's get connected
+                    </CommonButton>
+                </Link>
+
             </div>
 
         </div>
