@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CommonButton from "./commonButton";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/jobbed.png"
 import { AiOutlineUserAdd } from "react-icons/ai"
 import { TiHomeOutline } from "react-icons/ti"
 
@@ -72,8 +73,8 @@ function NavBar() {
                 <div className=" p-0 logo-box" style={{ marginLeft: "5px", justifyContent: "space-between", width: "fit-content" }}>
                     <Link to="/" style={rem}>
                         <img
-                            style={{ width: "15rem", height: "6rem", objectFit: "cover" }}
-                            src="/GigRfilled.png"
+                            style={{ width: "17rem", height: "7rem", objectFit: "cover" }}
+                            src={logo}
                             alt="GIGR Logo"
                         />
                     </Link>

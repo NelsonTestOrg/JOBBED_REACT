@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/main.css";
+import logo from "../assets/images/jobbed_w.png"
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -14,7 +15,7 @@ function Footer() {
                     <Link to="/">
                         <img
                             style={{ width: "15rem", height: "6rem", objectFit: "cover" }}
-                            src="/GigRtransparent.png"
+                            src={logo}
                             alt="GIGR Logo"
                         />
                     </Link>
