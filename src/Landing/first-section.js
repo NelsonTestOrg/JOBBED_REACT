@@ -10,7 +10,7 @@ function FirstSection() {
     }
     const divStyle = {
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8)), url(${backgrImage})`,
-        marginTop: "6rem",
+        marginTop: "7rem",
         height: "80vh",
         WebkitBackgroundSize: "cover",
         backgroundPosition: "center",
@@ -28,6 +28,9 @@ function FirstSection() {
     }
     return (
         <div className="first-section" style={divStyle} >
+            <div className="page-head">
+                <h1>home</h1>
+            </div>
             <div className="descriptionText w-100">
                 <h1 style={headers}>
                     Taking care of your home needs

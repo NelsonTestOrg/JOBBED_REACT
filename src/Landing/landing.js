@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import FirstSection from './first-section';
 import PromoSection from './promo-section';
 import PricingSection from './pricing-section';
-import Footer from '../components/footer';
 import { motion } from "framer-motion"
 
 function Landing() {
@@ -17,7 +16,6 @@ function Landing() {
             <FirstSection />
             <PromoSection />
             <PricingSection />
-            <Footer />
         </motion.div >
 
     );

@@ -1,0 +1,111 @@
+.services {
+  padding-top: 7rem;
+  background: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/images/bg4.jpg");
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.top-bins {
+  padding: 1rem;
+  color: white;
+  align-items: flex-end;
+  justify-content: end;
+  display: flex;
+}
+
+.search-bar {
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+.search-bar button:nth-child(1) {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  border-radius: 5px 0px 0 5px;
+  border: none;
+  border-right: 3px solid grey;
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+  margin: 0;
+  align-items: center;
+}
+p {
+  width: max-content;
+  margin: 0;
+  font-size: 2vh;
+}
+.search-field {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: inherit;
+  outline: none;
+  color: black;
+  padding-inline: 1rem;
+  border: none;
+  font-size: 2vh;
+  width: 70vw;
+  font-family: "Nunito", sans-serif;
+}
+.search-field:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.search-field:focus {
+  background-color: white;
+}
+.search-field::placeholder {
+  font-size: 2.5vh;
+}
+
+.search-btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+  border: none;
+  font-size: 3vh;
+  width: 10vw;
+}
+.search-bar button:hover {
+  background-color: white;
+}
+.search-bar button:active {
+  box-shadow: 5px 0px 15px white;
+}
+
+.page-head {
+  width: 100%;
+  margin-top: 0;
+  padding: 1rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.page-head h1 {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  padding: 0;
+  font-size: 4vh;
+  color: black;
+}
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-inline: 1rem;
+  margin-block: 10vh;
+  background-color: white;
+  border-radius: 5px;
+}
+.items-page-link {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: left;
+}

@@ -84,14 +84,6 @@ function NavBar() {
                     <div className="navbar navbar-expand-md w-100 ml-0 h-100 justify-content-end nav-options">
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav w-100 justify-content-start">
-                                <li className="nav-item active p-2 m-1">
-                                    <Link to="/services" style={rem}><button className="btn btn-outline-dark top-btns">
-                                        <i className="fa-solid fa-house mx-1"></i>
-                                        Services
-                                    </button>
-                                    </Link>
-                                </li>
-
                                 <li className="nav-item p-2 m-1">
                                     <Link to="/" style={rem}>
                                         <button className="btn btn-outline-dark top-btns">
@@ -100,6 +92,13 @@ function NavBar() {
                                         </button>
                                     </Link>
 
+                                </li>
+                                <li className="nav-item active p-2 m-1">
+                                    <Link to="/services" style={rem}><button className="btn btn-outline-dark top-btns">
+                                        <i className="fa-solid fa-house mx-1"></i>
+                                        Services
+                                    </button>
+                                    </Link>
                                 </li>
                                 <li className="nav-item p-2 m-1">
                                     <button className="btn btn-outline-dark top-btns">
