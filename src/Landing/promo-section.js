@@ -8,7 +8,7 @@ function PromoSection() {
       </div>
       <div className="line mx-4"></div>
       <div className="promo-row">
-        <div className="col col-promo">
+        <div className="col-promo">
           <div className="card">
             <div className="image-container">
               <img src="/cleaning.jpg" alt="" />
@@ -19,7 +19,7 @@ function PromoSection() {
             </div>
           </div>
         </div>
-        <div className="col col-promo">
+        <div className="col-promo">
           <div className="card">
             <div className="image-container">
               <img src="/cleaning.jpg" alt="" />
@@ -30,7 +30,7 @@ function PromoSection() {
             </div>
           </div>
         </div>
-        <div className="col col-promo">
+        <div className="col-promo">
           <div className="card">
             <div className="image-container">
               <img src="/cleaning.jpg" alt="" />

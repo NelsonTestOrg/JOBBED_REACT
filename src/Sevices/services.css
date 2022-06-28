@@ -6,7 +6,9 @@
   background-image: url("../assets/images/bg4.jpg");
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
+  position: relative;
+  padding-bottom: 1rem;
 }
 .top-bins {
   padding: 1rem;
@@ -99,7 +101,7 @@ p {
   padding: 1rem;
   margin-inline: 1rem;
   margin-block: 10vh;
-  background-color: white;
+  background-color: rgba(242, 242, 242, 0.903);
   border-radius: 5px;
 }
 .items-page-link {
@@ -108,4 +110,25 @@ p {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: left;
+}
+.category-item {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.category-item img {
+  width: 200px;
+  object-fit: contain;
+}
+.list-view {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

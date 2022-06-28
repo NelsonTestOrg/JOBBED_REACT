@@ -52,8 +52,9 @@ h4 {
   display: contents;
 }
 .promo-row {
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 

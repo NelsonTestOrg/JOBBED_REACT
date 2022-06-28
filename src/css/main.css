@@ -1,11 +1,13 @@
-
 .footer-section {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: fit-content;
   background-color: #232123;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: static;
 }
 
 .copyright-container {

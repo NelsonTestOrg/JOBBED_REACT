@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import CommonButton from "./commonButton";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/jobbed.png"
-import { AiOutlineUserAdd } from "react-icons/ai"
-import { TiHomeOutline } from "react-icons/ti"
+import { motion } from "framer-motion"
 
 import {
     HomeRounded,
@@ -86,25 +85,35 @@ function NavBar() {
                             <ul className="navbar-nav w-100 justify-content-start">
                                 <li className="nav-item p-2 m-1">
                                     <Link to="/" style={rem}>
-                                        <button className="btn btn-outline-dark top-btns">
-                                            <i className="fa-solid fa-circle-info mx-1"></i>
+                                        <motion.button
+                                            whileHover={{ scale: 1.1, textShadow: "0px 0px 8px white" }}
+                                            style={{ boxShadow: "0px 0px 8px black", border: 'none', textShadow: "0px 0px 8px black" }}
+                                            className="btn btn-outline-dark top-btns">
+                                            <i className="fa-solid fa-house mx-1"></i>
                                             Home
-                                        </button>
+                                        </motion.button>
                                     </Link>
 
                                 </li>
                                 <li className="nav-item active p-2 m-1">
-                                    <Link to="/services" style={rem}><button className="btn btn-outline-dark top-btns">
-                                        <i className="fa-solid fa-house mx-1"></i>
-                                        Services
-                                    </button>
+                                    <Link to="/services" style={rem}>
+                                        <motion.button
+                                            whileHover={{ scale: 1.1, textShadow: "0px 0px 8px white" }}
+                                            style={{ boxShadow: "0px 0px 8px black", border: 'none', textShadow: "0px 0px 8px black" }}
+                                            className="btn btn-outline-dark top-btns">
+                                            <i className="fa-solid fa-circle-info mx-1"></i>
+                                            Services
+                                        </motion.button>
                                     </Link>
                                 </li>
                                 <li className="nav-item p-2 m-1">
-                                    <button className="btn btn-outline-dark top-btns">
+                                    <motion.button
+                                        whileHover={{ scale: 1.1, textShadow: "0px 0px 8px white" }}
+                                        style={{ boxShadow: "0px 0px 8px black", border: 'none', textShadow: "0px 0px 8px black" }}
+                                        className="btn btn-outline-dark top-btns">
                                         <i className="fa-solid fa-headset mx-1"></i>
                                         Contact Us
-                                    </button>
+                                    </motion.button>
                                 </li>
                             </ul>
                         </div>
