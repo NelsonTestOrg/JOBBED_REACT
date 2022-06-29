@@ -1,9 +1,5 @@
 .services {
   padding-top: 7rem;
-  background: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/images/bg4.jpg");
   justify-content: center;
   align-items: center;
   height: fit-content;

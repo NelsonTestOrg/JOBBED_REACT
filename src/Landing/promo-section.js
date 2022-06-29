@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 
 function PromoSection() {
   return (
-    <div className="promo-container">
-      <div className="promo-header m-3 p-4">
+    <div className="promo-container p-2">
+      <div className="promo-header p-4">
         <h3>Popular Services</h3>
       </div>
       <div className="line mx-4"></div>

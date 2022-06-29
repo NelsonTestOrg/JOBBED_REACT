@@ -1,6 +1,6 @@
 // import './input.css
 import NavBar from "./components/navbar";
-
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState, useEffect } from "react";
 import { db } from "./firebase-config";
@@ -26,11 +26,11 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="app">
       <NavBar />
       <AnimatedRoutes />
       <Footer />
-    </>
+    </div>
   );
 }
 

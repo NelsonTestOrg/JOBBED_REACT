@@ -8,7 +8,7 @@ function PricingSection() {
 
     return (
         <div className='mid-section' style={pricingBackground} >
-            <div className="promo-header m-3 p-4">
+            <div className="promo-header p-4">
                 <h3>Pricing</h3>
             </div>
             <div className="line-2 mx-4"></div>
