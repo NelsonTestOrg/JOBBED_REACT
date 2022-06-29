@@ -67,8 +67,10 @@
   font-size: 2vh;
   padding-block: 0.4rem;
 }
+.about-container h6::after {
+  color: #4d4c4d;
+}
 .about-container h6:hover {
-  color: #ffdd43;
   cursor: pointer;
 }
 .joinUs-container {
@@ -92,7 +94,7 @@
   border: none;
   padding: 0.5rem;
   width: 100%;
-  color: #a7a7a7;
+  color: black;
   outline: none;
 }
 .joinUs-container input::placeholder {

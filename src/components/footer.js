@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/main.css";
 import logo from "../assets/images/jobbed_w.png"
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 
 function Footer() {
 
@@ -46,12 +47,12 @@ function Footer() {
                     <li><h3>Resources</h3></li>
                     <li>
                         <Link to="/services" style={rem}>
-                            <h6>Get Hired</h6>
+                            <motion.h6 whileHover={{ textShadow: '0px 0px 8px #ffdd43', color: '#ffdd43' }}>Get Hired</motion.h6>
                         </Link>
                     </li>
                     <li>
                         <Link to="/services" style={rem}>
-                            <h6>Find A HandyMan</h6>
+                            <motion.h6 whileHover={{ textShadow: '0px 0px 8px #ffdd43', color: '#ffdd43' }}>Find A HandyMan</motion.h6>
                         </Link>
                     </li>
                 </ul>
@@ -60,7 +61,7 @@ function Footer() {
                 <ul>
                     <li><h3>Join Us</h3></li>
                     <li>
-                        <input type="text" placeholder='Enter your Email here' />
+                        <motion.input whileFocus={{ backgroundColor: 'white' }} whileHover={{ backgroundColor: 'rgba(255,255,255,0.7)', scale: 1.05 }} type="text" placeholder='Enter your Email here' />
                     </li>
                 </ul>
             </div>

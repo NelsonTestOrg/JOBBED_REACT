@@ -39,7 +39,8 @@ function NavBar() {
         width: '100%',
         padding: '10px',
         letterSpacing: '.5rem',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'left'
     }
 
     const state = {
@@ -107,13 +108,16 @@ function NavBar() {
                                     </Link>
                                 </li>
                                 <li className="nav-item p-2 m-1">
-                                    <motion.button
-                                        whileHover={{ scale: 1.1, textShadow: "0px 0px 8px white" }}
-                                        style={{ boxShadow: "0px 0px 8px black", border: 'none', textShadow: "0px 0px 8px black" }}
-                                        className="btn btn-outline-dark top-btns">
-                                        <i className="fa-solid fa-headset mx-1"></i>
-                                        Contact Us
-                                    </motion.button>
+                                    <Link to="/profile" style={rem}>
+                                        <motion.button
+                                            whileHover={{ scale: 1.1, textShadow: "0px 0px 8px white" }}
+                                            style={{ boxShadow: "0px 0px 8px black", border: 'none', textShadow: "0px 0px 8px black" }}
+                                            className="btn btn-outline-dark top-btns">
+                                            <i className="fa-solid fa-headset mx-1"></i>
+                                            Profile
+                                        </motion.button>
+                                    </Link>
+
                                 </li>
                             </ul>
                         </div>

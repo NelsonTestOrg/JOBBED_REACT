@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 function PromoSection() {
   return (
@@ -9,7 +10,7 @@ function PromoSection() {
       <div className="line mx-4"></div>
       <div className="promo-row">
         <div className="col-promo">
-          <div className="card">
+          <motion.div whileHover={{ scale: 1.1, boxShadow: '0px 0px 8px black' }} className="card">
             <div className="image-container">
               <img src="/cleaning.jpg" alt="" />
             </div>
@@ -17,10 +18,23 @@ function PromoSection() {
               <h3>Cleaning</h3>
               <p>Get the best cleaning services</p>
             </div>
-          </div>
+          </motion.div>
+        </ div>
+
+
+        <div className="col-promo">
+          <motion.div whileHover={{ scale: 1.1, boxShadow: '0px 0px 8px black' }} className="card">
+            <div className="image-container">
+              <img src="/cleaning.jpg" alt="" />
+            </div>
+            <div className="card-details">
+              <h3>Cleaning</h3>
+              <p>Get the best cleaning services</p>
+            </div>
+          </motion.div>
         </div>
         <div className="col-promo">
-          <div className="card">
+          <motion.div whileHover={{ scale: 1.1, boxShadow: '0px 0px 8px black' }} className="card">
             <div className="image-container">
               <img src="/cleaning.jpg" alt="" />
             </div>
@@ -28,18 +42,7 @@ function PromoSection() {
               <h3>Cleaning</h3>
               <p>Get the best cleaning services</p>
             </div>
-          </div>
-        </div>
-        <div className="col-promo">
-          <div className="card">
-            <div className="image-container">
-              <img src="/cleaning.jpg" alt="" />
-            </div>
-            <div className="card-details">
-              <h3>Cleaning</h3>
-              <p>Get the best cleaning services</p>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
