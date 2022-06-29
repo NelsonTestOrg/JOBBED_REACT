@@ -6,9 +6,12 @@ import { motion } from 'framer-motion'
 function ServicesIntro() {
     return (
         <div className="service-view" style={{ height: 'fit-content' }}>
-            <div className="page-head">
+            <motion.div
+                initial={{ y: -250 }}
+                animate={{ y: 0 }}
+                className="page-head">
                 <h1>services</h1>
-            </div>
+            </motion.div>
             <div className="top-bins">
                 <CommonButton variant='contained' color="primary">
                     View Pending Orders

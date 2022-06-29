@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./landing.css";
 import backgrImage from "../assets/images/bg3.jpg";
 import CommonButton from "../components/commonButton";
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
 
 function FirstSection() {
@@ -28,9 +29,12 @@ function FirstSection() {
     }
     return (
         <div className="first-section" style={divStyle} >
-            <div className="page-head">
-                <h1>home</h1>
-            </div>
+            <motion.div
+                initial={{ y: -250 }}
+                animate={{ y: 0 }}
+                className="page-head">
+                <h1>HOME</h1>
+            </motion.div>
             <div className="descriptionText w-100">
                 <h1 style={headers}>
                     Taking care of your home needs
