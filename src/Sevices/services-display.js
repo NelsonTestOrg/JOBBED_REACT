@@ -9,7 +9,11 @@ import { motion } from 'framer-motion'
 
 function ServicesDisplay() {
     return (
-        <div className="main_container">
+        <motion.div
+            initial={{ y: 200 }}
+            animate={{ y: 0 }}
+
+            className="main_container">
             <div className="items-page-link">
                 <h3 className='px-4' >Browse By Category </h3>
                 <motion.button
@@ -47,7 +51,7 @@ function ServicesDisplay() {
                     <h2>Plumbing</h2>
                 </motion.div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

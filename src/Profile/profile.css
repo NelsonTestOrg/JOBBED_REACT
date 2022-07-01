@@ -21,7 +21,8 @@
 .profile-section {
   height: fit-content;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
+  padding-block: 2rem;
 }
 .profile-section input {
   color: #212222b7;
@@ -141,6 +142,7 @@
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+  padding: 1rem;
 }
 .part-detail {
   color: black;
@@ -165,6 +167,7 @@
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 .name-field {
   display: inline-flex;
@@ -199,6 +202,7 @@
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+  padding: 1rem;
 }
 .photo-cont {
   display: inline-flex;
@@ -231,4 +235,5 @@ input[type="number"] {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+  padding: 1rem;
 }

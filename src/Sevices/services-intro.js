@@ -20,7 +20,11 @@ function ServicesIntro() {
 
 
             </div>
-            <div className="search-bar">
+            <motion.div
+                initial={{ y: 300 }}
+                animate={{ y: 0 }}
+
+                className="search-bar">
                 <motion.button whileHover={{ scale: 1.05, boxShadow: '0px 0px 8px black' }}>
                     <p style={{ padding: "0" }}> All Categories</p>
                     <i class="fa-solid fa-chevron-down mx-2"></i>
@@ -29,7 +33,7 @@ function ServicesIntro() {
                 <motion.button whileHover={{ scale: 1.05, boxShadow: '0px 0px 8px black' }} className="search-btn">
                     <i class="fa-solid fa-magnifying-glass px-2"></i>
                 </motion.button>
-            </div>
+            </motion.div>
         </div>
     )
 }

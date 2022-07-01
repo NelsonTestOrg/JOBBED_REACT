@@ -17,7 +17,7 @@ function FirstSection() {
         backgroundPosition: "center",
         display: "flex",
         flexWrap: "wrap",
-        backgroundAttachment: "fixed"
+        // backgroundAttachment: "fixed"
     }
     const specialBtns = {
         fontFamily: ["Nunito", "sans-serif"].join(","),
@@ -36,14 +36,25 @@ function FirstSection() {
                 <h1>HOME</h1>
             </motion.div>
             <div className="descriptionText w-100">
-                <h1 style={headers}>
+                <motion.h1
+                    initial={{ x: 2000 }}
+                    animate={{ x: 0 }}
+
+                    style={headers}>
                     Taking care of your home needs
-                </h1>
-                <h4>
+                </motion.h1>
+                <motion.h4
+                    initial={{ x: 2000 }}
+                    animate={{ x: 0 }}
+
+                >
                     Finding someone to run your errands, get your engine fixed? We have someone for everyone.
-                </h4>
+                </motion.h4>
             </div>
-            <div className="searchBar p-3 " style={{ width: "100vw", justifyContent: "center", textAlign: "center", margin: "4rem", display: "flex", flexWrap: "nowrap" }}>
+            <motion.div
+                initial={{ y: -2000 }}
+                animate={{ y: 0 }}
+                className="searchBar p-3 " style={{ width: "100vw", justifyContent: "center", textAlign: "center", margin: "4rem", display: "flex", flexWrap: "nowrap" }}>
                 <select name="search" id="" className='form-select form-select-lg mb-3' style={{ height: "fit-content", width: "50%" }}>
                     <option selected >What services are you looking for?</option>
                     <option value="1" >One</option>
@@ -56,7 +67,7 @@ function FirstSection() {
                     </CommonButton>
                 </Link>
 
-            </div>
+            </motion.div>
 
         </div>
 
