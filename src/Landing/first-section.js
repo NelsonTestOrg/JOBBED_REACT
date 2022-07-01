@@ -39,7 +39,7 @@ function FirstSection() {
                 <motion.h1
                     initial={{ x: 2000 }}
                     animate={{ x: 0 }}
-
+                    whileHover={{ scale: 1.05 }}
                     style={headers}>
                     Taking care of your home needs
                 </motion.h1>
@@ -55,12 +55,14 @@ function FirstSection() {
                 initial={{ y: -2000 }}
                 animate={{ y: 0 }}
                 className="searchBar p-3 " style={{ width: "100vw", justifyContent: "center", textAlign: "center", margin: "4rem", display: "flex", flexWrap: "nowrap" }}>
-                <select name="search" id="" className='form-select form-select-lg mb-3' style={{ height: "fit-content", width: "50%" }}>
+                <motion.select
+                    whileHover={{ scale: 1.05, x: -30 }}
+                    name="search" id="" className='form-select form-select-lg mb-3' style={{ height: "fit-content", width: "50%" }}>
                     <option selected >What services are you looking for?</option>
                     <option value="1" >One</option>
                     <option value="2" >Two</option>
                     <option value="3" >Three</option>
-                </select>
+                </motion.select>
                 <Link to="/services" style={rem}>
                     <CommonButton variant="contained" color="primary" sx={specialBtns}>
                         Let's get connected
