@@ -52,6 +52,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.noData {
+  display: none;
+}
 
 .profile-nav {
   display: flex;
@@ -103,6 +106,7 @@
   padding: 1rem;
   border: none;
   background-color: #212222b7;
+  outline: none;
 }
 .profile-nav div:nth-child(2) {
   width: 100%;
