@@ -40,6 +40,9 @@
   width: 100%;
   display: inline-flex;
 }
+td {
+  border-bottom: none;
+}
 tr {
   width: 100%;
   display: inline-flex;
@@ -49,4 +52,10 @@ thead {
   display: block;
   width: 100%;
   border-bottom: 1px solid black;
+}
+.pending-issue {
+  width: 75%;
+  height: 70vh;
+  background-color: white;
+  border-radius: 5px;
 }

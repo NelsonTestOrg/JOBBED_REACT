@@ -4,6 +4,7 @@ import photo from '../assets/images/man.png'
 import { motion } from 'framer-motion'
 import { ProfileDetails } from './profile-details';
 import { ProfileHistory } from './profile-history'
+import ProfilePending from './profile-pending';
 
 
 function Profile() {
@@ -79,6 +80,7 @@ function Profile() {
 
                     <ProfileDetails showContent={showContent} setContent={setContent} />
                     <ProfileHistory showContent={showContent} setContent={setContent} />
+                    <ProfilePending showContent={showContent} />
 
                 </motion.div>
 
