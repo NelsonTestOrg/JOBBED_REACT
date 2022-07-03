@@ -38,7 +38,7 @@
 }
 .profile-nav {
   background-color: white;
-  height: 70vh;
+  height: initials;
   width: 23%;
   border-radius: 5px;
 }

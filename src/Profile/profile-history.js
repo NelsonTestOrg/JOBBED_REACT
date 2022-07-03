@@ -29,7 +29,9 @@ export const ProfileHistory = ({ showContent }) => {
                             </tr>
                         </thead>
                         <tbody>
-
+                            <tr><td className="py-4">
+                                No Available History 
+                            </td></tr>
                         </tbody>
                     </table>
                 </div>

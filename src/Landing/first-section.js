@@ -12,7 +12,7 @@ function FirstSection() {
     const divStyle = {
         backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8)), url(${backgrImage})`,
         marginTop: "7rem",
-        height: "80vh",
+        height: "fit-content",
         WebkitBackgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",

@@ -38,24 +38,17 @@
 .table {
   border: none;
   width: 100%;
-  display: inline-flex;
+  color: black;
 }
 td {
   border-bottom: none;
+  width: 100%;
+  text-align: center;
 }
 tr {
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
+  border-bottom: 2px solid #e2e2e2;
 }
-thead {
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid black;
-}
-.pending-issue {
-  width: 75%;
-  height: 70vh;
-  background-color: white;
-  border-radius: 5px;
-}
+
