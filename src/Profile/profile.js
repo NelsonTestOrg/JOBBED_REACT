@@ -78,8 +78,8 @@ function Profile() {
 
                     </div>
 
-                    <ProfileDetails showContent={showContent} setContent={setContent} />
-                    <ProfileHistory showContent={showContent} setContent={setContent} />
+                    <ProfileDetails showContent={showContent}  />
+                    <ProfileHistory showContent={showContent}  />
                     <ProfilePending showContent={showContent} />
 
                 </motion.div>

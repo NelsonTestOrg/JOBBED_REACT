@@ -3,6 +3,8 @@ import CommonButton from "./commonButton";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/jobbed.png"
 import { motion } from "framer-motion"
+import { ToastContainer, toast, Zoom, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
 import {
     HomeRounded,
@@ -12,7 +14,12 @@ import {
     CloseRounded
 } from "@mui/icons-material";
 
+
 function NavBar() {
+
+    const notifyErr = () => {
+        toast.error("This module has not yet been developed");
+    }
     const myStyle = {
         fontFamily: ["Nunito", "sans-serif"].join(","),
         textTransform: "none"
@@ -68,7 +75,7 @@ function NavBar() {
         <nav
             className="home-nav p-0 w-100"
             style={navPosition}
-        >
+        ><ToastContainer />
             <div className="row nav p-0 body-head" style={{ justifyContent: "space-between", width: "100%", display: "flex", flexWrap: "nowrap" }}>
                 <div className=" p-0 logo-box" style={{ marginLeft: "5px", justifyContent: "space-between", width: "fit-content" }}>
                     <Link to="/" style={rem}>
@@ -100,6 +107,7 @@ function NavBar() {
                                     <Link to="/services" style={rem}>
                                         <motion.button
                                             whileHover={{ scale: 1.1, textShadow: "0px 0px 8px white" }}
+
                                             style={{ boxShadow: "0px 0px 8px black", border: 'none', textShadow: "0px 0px 8px black" }}
                                             className="btn btn-outline-dark top-btns">
                                             <i className="fa-solid fa-circle-info mx-1"></i>
@@ -152,6 +160,7 @@ function NavBar() {
                             </CommonButton>
                         </span>
                     </div>
+
                     <div className="mobileNavbar">
                         {
                             show ? <ul className="list" style={list}>
